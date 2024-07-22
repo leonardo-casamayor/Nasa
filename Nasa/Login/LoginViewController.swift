@@ -2,7 +2,7 @@
 //  LoginViewController.swift
 //  Nasa
 //
-//  Created by user on 20/07/2024.
+//  Created by Leonardo Casamayor on 20/07/2024.
 //
 
 import UIKit
@@ -85,24 +85,7 @@ class LoginViewController: UIViewController {
             return false
         }
     }
-    // Register button
-    @IBAction func registerAction(_ sender: UIButton) {
-        guard let username = userField.text, let password = passwordField.text else { return }
-        let informationComplete: Bool = userField.text != "" && passwordField.text != ""
-        if informationComplete {
-         let loginController = LoginController(username: username, password: password)
-            if loginController.register() {
-                userField.text = ""
-                passwordField.text = ""
-                performSegue(withIdentifier: LoginConstants.segueIdentifier, sender: nil)
-                UserDefaults.standard.set(true, forKey: LoginConstants.userDefaultKey)
-            } else {
-                displayLoginError(error: LoginConstants.errorRegisterUserExists)
-            }
-        } else {
-            displayLoginError(error: LoginConstants.errorRegisterEmptyField)
-        }
-    }
+    
     @IBAction func prepareForUnwind(segue: UIStoryboardSegue) {
         
     }

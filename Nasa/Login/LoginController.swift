@@ -2,14 +2,14 @@
 //  LoginController.swift
 //  Nasa
 //
-//  Created by user on 20/07/2024.
+//  Created by Leonardo Casamayor on 20/07/2024.
 //
 
 import Foundation
 
 protocol LoginProtocol {
     func login() -> Bool
-    func register() -> Bool
+    func register() -> Void
 }
 
 struct LoginController: LoginProtocol {
@@ -40,14 +40,11 @@ extension LoginController {
 }
 
 extension LoginController {
-    func register() -> Bool {
-        guard let user = self.username, let password = self.password else { return false }
+    func register() {
+        guard let user = self.username, let password = self.password else { return }
         let databaseUser = userLoader.load()
         if databaseUser.username != user {
             userLoader.write(user: Users(username: user, password: password))
-            return true
-        } else {
-            return false
         }
     }
 }

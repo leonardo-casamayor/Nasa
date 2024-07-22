@@ -20,13 +20,16 @@
 		CE6D348F2C4C5E110014EE98 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = CE6D348E2C4C5E110014EE98 /* FirebaseAuth */; };
 		CE6D34912C4C5E900014EE98 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6D34902C4C5E900014EE98 /* Constants.swift */; };
 		CE6D34942C4C5EFC0014EE98 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6D34932C4C5EFC0014EE98 /* CustomButton.swift */; };
-		CE6D34982C4C63E60014EE98 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE6D34972C4C63E60014EE98 /* GoogleService-Info.plist */; };
 		CEB92BD32C4481D500B42304 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB92BD22C4481D500B42304 /* AppDelegate.swift */; };
 		CEB92BD52C4481D500B42304 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB92BD42C4481D500B42304 /* SceneDelegate.swift */; };
-		CEB92BD72C4481D500B42304 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB92BD62C4481D500B42304 /* ViewController.swift */; };
 		CEB92BDA2C4481D500B42304 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB92BD82C4481D500B42304 /* Main.storyboard */; };
 		CEB92BDC2C4481D600B42304 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB92BDB2C4481D600B42304 /* Assets.xcassets */; };
 		CEB92BDF2C4481D600B42304 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB92BDD2C4481D600B42304 /* LaunchScreen.storyboard */; };
+		CEE814272C4DD6C2008931E2 /* ApodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE814262C4DD6C2008931E2 /* ApodViewController.swift */; };
+		CEE8142A2C4DD7FE008931E2 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = CEE814292C4DD7FE008931E2 /* SDWebImage */; };
+		CEE8142E2C4DEDA6008931E2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE8142D2C4DEDA6008931E2 /* NetworkManager.swift */; };
+		CEE814312C4DEECD008931E2 /* ApodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE814302C4DEECD008931E2 /* ApodModel.swift */; };
+		CEE814342C4E07AF008931E2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEE814332C4E07AF008931E2 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,15 +38,17 @@
 		CE6D34682C4C4A8D0014EE98 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CE6D34902C4C5E900014EE98 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CE6D34932C4C5EFC0014EE98 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
-		CE6D34972C4C63E60014EE98 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CEB92BCF2C4481D500B42304 /* Nasa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nasa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB92BD22C4481D500B42304 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEB92BD42C4481D500B42304 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CEB92BD62C4481D500B42304 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CEB92BD92C4481D500B42304 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEB92BDB2C4481D600B42304 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEB92BDE2C4481D600B42304 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEB92BE02C4481D600B42304 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEE814262C4DD6C2008931E2 /* ApodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodViewController.swift; sourceTree = "<group>"; };
+		CEE8142D2C4DEDA6008931E2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CEE814302C4DEECD008931E2 /* ApodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodModel.swift; sourceTree = "<group>"; };
+		CEE814332C4E07AF008931E2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +62,7 @@
 				CE6D34842C4C5D8B0014EE98 /* FirebaseAnalytics in Frameworks */,
 				CE6D348C2C4C5D8B0014EE98 /* FirebaseAppCheck in Frameworks */,
 				CE6D34862C4C5D8B0014EE98 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				CEE8142A2C4DD7FE008931E2 /* SDWebImage in Frameworks */,
 				CE6D34882C4C5D8B0014EE98 /* FirebaseAnalyticsSwift in Frameworks */,
 				CE6D348F2C4C5E110014EE98 /* FirebaseAuth in Frameworks */,
 			);
@@ -110,19 +116,37 @@
 		CEB92BD12C4481D500B42304 /* Nasa */ = {
 			isa = PBXGroup;
 			children = (
-				CE6D34972C4C63E60014EE98 /* GoogleService-Info.plist */,
+				CEE814332C4E07AF008931E2 /* GoogleService-Info.plist */,
+				CEE8142F2C4DEEBC008931E2 /* Models */,
+				CEE814252C4DD6AC008931E2 /* APOD */,
 				CE6D34922C4C5EEC0014EE98 /* Views */,
 				CE6D34632C4C48410014EE98 /* Login */,
 				CEB92BD22C4481D500B42304 /* AppDelegate.swift */,
 				CEB92BD42C4481D500B42304 /* SceneDelegate.swift */,
-				CEB92BD62C4481D500B42304 /* ViewController.swift */,
 				CEB92BD82C4481D500B42304 /* Main.storyboard */,
 				CEB92BDB2C4481D600B42304 /* Assets.xcassets */,
 				CEB92BDD2C4481D600B42304 /* LaunchScreen.storyboard */,
 				CEB92BE02C4481D600B42304 /* Info.plist */,
 				CE6D34902C4C5E900014EE98 /* Constants.swift */,
+				CEE8142D2C4DEDA6008931E2 /* NetworkManager.swift */,
 			);
 			path = Nasa;
+			sourceTree = "<group>";
+		};
+		CEE814252C4DD6AC008931E2 /* APOD */ = {
+			isa = PBXGroup;
+			children = (
+				CEE814262C4DD6C2008931E2 /* ApodViewController.swift */,
+			);
+			path = APOD;
+			sourceTree = "<group>";
+		};
+		CEE8142F2C4DEEBC008931E2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CEE814302C4DEECD008931E2 /* ApodModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +174,7 @@
 				CE6D34892C4C5D8B0014EE98 /* FirebaseAnalyticsWithoutAdIdSupport */,
 				CE6D348B2C4C5D8B0014EE98 /* FirebaseAppCheck */,
 				CE6D348E2C4C5E110014EE98 /* FirebaseAuth */,
+				CEE814292C4DD7FE008931E2 /* SDWebImage */,
 			);
 			productName = Nasa;
 			productReference = CEB92BCF2C4481D500B42304 /* Nasa.app */;
@@ -182,6 +207,7 @@
 			packageReferences = (
 				CE6D347D2C4C5D340014EE98 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 				CE6D34822C4C5D8B0014EE98 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				CEE814282C4DD7FE008931E2 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = CEB92BD02C4481D500B42304 /* Products */;
 			projectDirPath = "";
@@ -198,7 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEB92BDF2C4481D600B42304 /* LaunchScreen.storyboard in Resources */,
-				CE6D34982C4C63E60014EE98 /* GoogleService-Info.plist in Resources */,
+				CEE814342C4E07AF008931E2 /* GoogleService-Info.plist in Resources */,
 				CEB92BDC2C4481D600B42304 /* Assets.xcassets in Resources */,
 				CEB92BDA2C4481D500B42304 /* Main.storyboard in Resources */,
 			);
@@ -211,13 +237,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE8142E2C4DEDA6008931E2 /* NetworkManager.swift in Sources */,
 				CE6D34692C4C4A8D0014EE98 /* LoginViewController.swift in Sources */,
 				CE6D34672C4C48A90014EE98 /* UsersLoader.swift in Sources */,
-				CEB92BD72C4481D500B42304 /* ViewController.swift in Sources */,
+				CEE814312C4DEECD008931E2 /* ApodModel.swift in Sources */,
 				CE6D34652C4C485C0014EE98 /* LoginController.swift in Sources */,
 				CE6D34942C4C5EFC0014EE98 /* CustomButton.swift in Sources */,
 				CE6D34912C4C5E900014EE98 /* Constants.swift in Sources */,
 				CEB92BD32C4481D500B42304 /* AppDelegate.swift in Sources */,
+				CEE814272C4DD6C2008931E2 /* ApodViewController.swift in Sources */,
 				CEB92BD52C4481D500B42304 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,6 +489,14 @@
 				minimumVersion = 10.29.0;
 			};
 		};
+		CEE814282C4DD7FE008931E2 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.19.4;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -503,6 +539,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CE6D34822C4C5D8B0014EE98 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
+		};
+		CEE814292C4DD7FE008931E2 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEE814282C4DD7FE008931E2 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
