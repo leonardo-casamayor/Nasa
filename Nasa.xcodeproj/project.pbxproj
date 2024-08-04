@@ -44,6 +44,9 @@
 		CEE814632C5F427B008931E2 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = CEE814622C5F427B008931E2 /* SDWebImageSwiftUI */; };
 		CEE814652C5FF998008931E2 /* RotationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE814642C5FF998008931E2 /* RotationHelper.swift */; };
 		CEE814672C5FF9FA008931E2 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE814662C5FF9FA008931E2 /* VideoPlayerViewController.swift */; };
+		CEE814692C602BB9008931E2 /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE814682C602BB9008931E2 /* Favorite.swift */; };
+		CEE8146C2C602C63008931E2 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE8146B2C602C63008931E2 /* FavoritesViewController.swift */; };
+		CEE8146E2C602C84008931E2 /* FavoriteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE8146D2C602C84008931E2 /* FavoriteController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +79,9 @@
 		CEE8145F2C5F41F7008931E2 /* CellDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellDetailView.swift; sourceTree = "<group>"; };
 		CEE814642C5FF998008931E2 /* RotationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationHelper.swift; sourceTree = "<group>"; };
 		CEE814662C5FF9FA008931E2 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
+		CEE814682C602BB9008931E2 /* Favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
+		CEE8146B2C602C63008931E2 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		CEE8146D2C602C84008931E2 /* FavoriteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +154,7 @@
 		CEB92BD12C4481D500B42304 /* Nasa */ = {
 			isa = PBXGroup;
 			children = (
+				CEE8146A2C602C08008931E2 /* Favorites */,
 				CEE8145C2C5F40FD008931E2 /* Detail */,
 				CEE814532C5F2D8E008931E2 /* Utils */,
 				CEE814482C5F1EDB008931E2 /* Popular */,
@@ -181,6 +188,7 @@
 			children = (
 				CEE814302C4DEECD008931E2 /* ApodModel.swift */,
 				CEE814582C5F33A6008931E2 /* NasaImageVideoLibrary.swift */,
+				CEE814682C602BB9008931E2 /* Favorite.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -212,6 +220,15 @@
 				CEE814662C5FF9FA008931E2 /* VideoPlayerViewController.swift */,
 			);
 			path = Detail;
+			sourceTree = "<group>";
+		};
+		CEE8146A2C602C08008931E2 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				CEE8146B2C602C63008931E2 /* FavoritesViewController.swift */,
+				CEE8146D2C602C84008931E2 /* FavoriteController.swift */,
+			);
+			path = Favorites;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,13 +329,16 @@
 				CEE814312C4DEECD008931E2 /* ApodModel.swift in Sources */,
 				CEE8144C2C5F1F4B008931E2 /* SearchingController.swift in Sources */,
 				CEE814572C5F3352008931E2 /* DataLoader.swift in Sources */,
+				CEE8146C2C602C63008931E2 /* FavoritesViewController.swift in Sources */,
 				CEE814602C5F41F7008931E2 /* CellDetailView.swift in Sources */,
+				CEE814692C602BB9008931E2 /* Favorite.swift in Sources */,
 				CEE8145E2C5F4126008931E2 /* CellDetailViewController.swift in Sources */,
 				CEE814552C5F2DAB008931E2 /* ImageRetrieveController.swift in Sources */,
 				CEE814522C5F2D57008931E2 /* MyImageView.swift in Sources */,
 				CEE814672C5FF9FA008931E2 /* VideoPlayerViewController.swift in Sources */,
 				CE6D34652C4C485C0014EE98 /* LoginController.swift in Sources */,
 				CE6D34942C4C5EFC0014EE98 /* CustomButton.swift in Sources */,
+				CEE8146E2C602C84008931E2 /* FavoriteController.swift in Sources */,
 				CE6D34912C4C5E900014EE98 /* Constants.swift in Sources */,
 				CEB92BD32C4481D500B42304 /* AppDelegate.swift in Sources */,
 				CEE814592C5F33A6008931E2 /* NasaImageVideoLibrary.swift in Sources */,

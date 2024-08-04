@@ -147,3 +147,11 @@ extension UIImage {
     static let pause: UIImage? = UIImage(systemName: "pause.circle.fill")
     static let replay: UIImage? = UIImage(systemName: "arrow.uturn.left")
 }
+
+struct FavoritesTabConstants {
+    static let addFavTitle = "⭐️ Welcome to Favorites! ⭐️"
+    static let addFavDescription = "Please add items to your collection by visiting the popular tab, then favorite a selected item by tapping the ♡ icon"
+    static let url = "https://apod.nasa.gov/apod/image/2108/Abell3827Lens_Hubble_960.jpg"
+    static let description = "NASA"
+    static let date = "2018-05-14T00:00:00Z"
+}

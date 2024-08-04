@@ -235,7 +235,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eBa-Le-baK" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="773" y="-27"/>
+            <point key="canvasLocation" x="526" y="120"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="dNZ-Ov-do6">
@@ -251,11 +251,12 @@
                     <connections>
                         <segue destination="il9-2C-H1r" kind="relationship" relationship="viewControllers" id="ZaV-IN-Yvr"/>
                         <segue destination="UBs-eK-zd2" kind="relationship" relationship="viewControllers" id="yQr-5B-ocb"/>
+                        <segue destination="hiR-kK-hjK" kind="relationship" relationship="viewControllers" id="mhk-Vr-0vK"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eiv-mx-94E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1743" y="-27"/>
+            <point key="canvasLocation" x="1514" y="120"/>
         </scene>
         <!--APOD-->
         <scene sceneID="40a-8f-XDx">
@@ -492,7 +493,7 @@
         <!--Cell Detail View Controller-->
         <scene sceneID="K85-Vl-dAA">
             <objects>
-                <viewController storyboardIdentifier="CellDetailViewController" modalPresentationStyle="pageSheet" useStoryboardIdentifierAsRestorationIdentifier="YES" id="agP-ex-zIu" customClass="CellDetailViewController" customModule="Nasa_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CellDetailViewController" modalPresentationStyle="pageSheet" useStoryboardIdentifierAsRestorationIdentifier="YES" id="agP-ex-zIu" customClass="CellDetailViewController" customModule="Nasa" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="teY-jO-BIC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="749"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -531,7 +532,7 @@
         <!--Video Player View Controller-->
         <scene sceneID="NFb-WT-7NS">
             <objects>
-                <viewController storyboardIdentifier="VideoPlayer" modalPresentationStyle="fullScreen" id="ZXJ-Uq-PSh" customClass="VideoPlayerViewController" customModule="Nasa_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VideoPlayer" modalPresentationStyle="fullScreen" id="ZXJ-Uq-PSh" customClass="VideoPlayerViewController" customModule="Nasa" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P7B-M2-k7Q">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -547,7 +548,7 @@
                                 <rect key="frame" x="0.0" y="769.33333333333337" width="393" height="82.666666666666629"/>
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="vBE-sy-1G0">
-                                        <rect key="frame" x="76.666666666666671" y="37.333333333333258" width="239.66666666666657" height="9"/>
+                                        <rect key="frame" x="76.666666666666671" y="37.333333333333258" width="239.66666666666663" height="9"/>
                                         <connections>
                                             <action selector="sliderValueChanged:" destination="ZXJ-Uq-PSh" eventType="valueChanged" id="B9o-bs-MF9"/>
                                             <action selector="viewsTapped" destination="ZXJ-Uq-PSh" eventType="valueChanged" id="fVJ-SZ-F3t"/>
@@ -730,6 +731,44 @@
             </objects>
             <point key="canvasLocation" x="7060" y="-27"/>
         </scene>
+        <!--Favorites-->
+        <scene sceneID="Axe-ev-z3B">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" hidesBarsWhenVerticallyCompact="YES" id="hiR-kK-hjK" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Favorites" image="heart" catalog="system" id="Yx1-2a-hHB"/>
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="c5N-t4-1Ax">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3zi-Gx-g0S" kind="relationship" relationship="rootViewController" id="2Lm-6o-ykq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZUJ-Gr-RDi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3065" y="692"/>
+        </scene>
+        <!--Favorite View Controller-->
+        <scene sceneID="ewN-cL-XrT">
+            <objects>
+                <viewController id="3zi-Gx-g0S" customClass="FavoriteViewController" customModule="Nasa_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2sM-Rb-cBo">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="759"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ftI-9t-gi2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="AUH-hy-8AB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EFg-L7-I4R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4163" y="692"/>
+        </scene>
     </scenes>
     <designables>
         <designable name="WXf-Gd-Wr0">
@@ -746,6 +785,7 @@
         <image name="folder" catalog="system" width="128" height="96"/>
         <image name="gobackward.10" catalog="system" width="119" height="128"/>
         <image name="goforward.10" catalog="system" width="119" height="128"/>
+        <image name="heart" catalog="system" width="128" height="107"/>
         <image name="network" catalog="system" width="128" height="123"/>
         <image name="play.circle.fill" catalog="system" width="128" height="123"/>
         <image name="power" catalog="system" width="127" height="128"/>
