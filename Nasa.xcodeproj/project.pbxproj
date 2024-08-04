@@ -39,6 +39,11 @@
 		CEE814572C5F3352008931E2 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE814562C5F3352008931E2 /* DataLoader.swift */; };
 		CEE814592C5F33A6008931E2 /* NasaImageVideoLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE814582C5F33A6008931E2 /* NasaImageVideoLibrary.swift */; };
 		CEE8145B2C5F3408008931E2 /* ApiQueryGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE8145A2C5F3408008931E2 /* ApiQueryGenerator.swift */; };
+		CEE8145E2C5F4126008931E2 /* CellDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE8145D2C5F4126008931E2 /* CellDetailViewController.swift */; };
+		CEE814602C5F41F7008931E2 /* CellDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE8145F2C5F41F7008931E2 /* CellDetailView.swift */; };
+		CEE814632C5F427B008931E2 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = CEE814622C5F427B008931E2 /* SDWebImageSwiftUI */; };
+		CEE814652C5FF998008931E2 /* RotationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE814642C5FF998008931E2 /* RotationHelper.swift */; };
+		CEE814672C5FF9FA008931E2 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE814662C5FF9FA008931E2 /* VideoPlayerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +72,10 @@
 		CEE814562C5F3352008931E2 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
 		CEE814582C5F33A6008931E2 /* NasaImageVideoLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaImageVideoLibrary.swift; sourceTree = "<group>"; };
 		CEE8145A2C5F3408008931E2 /* ApiQueryGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiQueryGenerator.swift; sourceTree = "<group>"; };
+		CEE8145D2C5F4126008931E2 /* CellDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellDetailViewController.swift; sourceTree = "<group>"; };
+		CEE8145F2C5F41F7008931E2 /* CellDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellDetailView.swift; sourceTree = "<group>"; };
+		CEE814642C5FF998008931E2 /* RotationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationHelper.swift; sourceTree = "<group>"; };
+		CEE814662C5FF9FA008931E2 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE814632C5F427B008931E2 /* SDWebImageSwiftUI in Frameworks */,
 				CE6D347F2C4C5D340014EE98 /* GoogleSignIn in Frameworks */,
 				CE6D348A2C4C5D8B0014EE98 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 				CE6D34812C4C5D340014EE98 /* GoogleSignInSwift in Frameworks */,
@@ -113,6 +123,7 @@
 				CEE8144D2C5F2CEB008931E2 /* CollectionViewHelper.swift */,
 				CEE8144F2C5F2D31008931E2 /* CollectionCell.swift */,
 				CEE814512C5F2D57008931E2 /* MyImageView.swift */,
+				CEE8145F2C5F41F7008931E2 /* CellDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -137,6 +148,7 @@
 		CEB92BD12C4481D500B42304 /* Nasa */ = {
 			isa = PBXGroup;
 			children = (
+				CEE8145C2C5F40FD008931E2 /* Detail */,
 				CEE814532C5F2D8E008931E2 /* Utils */,
 				CEE814482C5F1EDB008931E2 /* Popular */,
 				CEE814332C4E07AF008931E2 /* GoogleService-Info.plist */,
@@ -188,8 +200,18 @@
 				CEE814542C5F2DAB008931E2 /* ImageRetrieveController.swift */,
 				CEE814562C5F3352008931E2 /* DataLoader.swift */,
 				CEE8145A2C5F3408008931E2 /* ApiQueryGenerator.swift */,
+				CEE814642C5FF998008931E2 /* RotationHelper.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		CEE8145C2C5F40FD008931E2 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				CEE8145D2C5F4126008931E2 /* CellDetailViewController.swift */,
+				CEE814662C5FF9FA008931E2 /* VideoPlayerViewController.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +240,7 @@
 				CE6D348B2C4C5D8B0014EE98 /* FirebaseAppCheck */,
 				CE6D348E2C4C5E110014EE98 /* FirebaseAuth */,
 				CEE814292C4DD7FE008931E2 /* SDWebImage */,
+				CEE814622C5F427B008931E2 /* SDWebImageSwiftUI */,
 			);
 			productName = Nasa;
 			productReference = CEB92BCF2C4481D500B42304 /* Nasa.app */;
@@ -251,6 +274,7 @@
 				CE6D347D2C4C5D340014EE98 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 				CE6D34822C4C5D8B0014EE98 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				CEE814282C4DD7FE008931E2 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				CEE814612C5F427B008931E2 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = CEB92BD02C4481D500B42304 /* Products */;
 			projectDirPath = "";
@@ -281,14 +305,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEE8142E2C4DEDA6008931E2 /* NetworkManager.swift in Sources */,
+				CEE814652C5FF998008931E2 /* RotationHelper.swift in Sources */,
 				CEE8145B2C5F3408008931E2 /* ApiQueryGenerator.swift in Sources */,
 				CE6D34692C4C4A8D0014EE98 /* LoginViewController.swift in Sources */,
 				CE6D34672C4C48A90014EE98 /* UsersLoader.swift in Sources */,
 				CEE814312C4DEECD008931E2 /* ApodModel.swift in Sources */,
 				CEE8144C2C5F1F4B008931E2 /* SearchingController.swift in Sources */,
 				CEE814572C5F3352008931E2 /* DataLoader.swift in Sources */,
+				CEE814602C5F41F7008931E2 /* CellDetailView.swift in Sources */,
+				CEE8145E2C5F4126008931E2 /* CellDetailViewController.swift in Sources */,
 				CEE814552C5F2DAB008931E2 /* ImageRetrieveController.swift in Sources */,
 				CEE814522C5F2D57008931E2 /* MyImageView.swift in Sources */,
+				CEE814672C5FF9FA008931E2 /* VideoPlayerViewController.swift in Sources */,
 				CE6D34652C4C485C0014EE98 /* LoginController.swift in Sources */,
 				CE6D34942C4C5EFC0014EE98 /* CustomButton.swift in Sources */,
 				CE6D34912C4C5E900014EE98 /* Constants.swift in Sources */,
@@ -549,6 +577,14 @@
 				minimumVersion = 5.19.4;
 			};
 		};
+		CEE814612C5F427B008931E2 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = exactVersion;
+				version = 2.2.7;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -596,6 +632,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CEE814282C4DD7FE008931E2 /* XCRemoteSwiftPackageReference "SDWebImage" */;
 			productName = SDWebImage;
+		};
+		CEE814622C5F427B008931E2 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEE814612C5F427B008931E2 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
