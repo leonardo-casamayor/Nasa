@@ -37,3 +37,39 @@ struct ApodConstants {
                                                     copyright: "Mike Smolinsky",
                                                     thumbnailUrl: nil)
 }
+
+struct CollectionViewConstants {
+    static let conectionError = "There has been an issue reaching the servers"
+    static let noResult = "Your search did not match any results"
+    static let glass: UIImage? = UIImage(systemName: "magnifyingglass")
+    static let wifi: UIImage? = UIImage(systemName: "wifi.slash")
+    struct LayoutSize {
+        let columns: Int
+        let height: CGFloat
+    }
+}
+
+struct DateFormat {
+    static func formatDate(dateString: String) -> String {
+        let longDateFormatter = DateFormatter()
+        longDateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+        if let date = longDateFormatter.date(from: dateString) {
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy-MM-dd"
+            return dateFormatter.string(from: date)
+        } else {
+            return dateString
+        }
+    }
+}
+
+struct MediaApiConstants {
+    static let mediaAPI: String = "images-api.nasa.gov"
+    static let searchEndpoint: String = "/search"
+    static let assetEndpoint: String = "/asset/"
+    static let metadataEndpoint: String = "/metadata/"
+    static let captionEndpoint: String = "/captions/"
+    static let albumEndpoint: String = "/album/"
+    static let defaultPopularSearch = ["q":"popular",
+                                       "media_type":"image,video"]
+}

@@ -30,6 +30,15 @@
 		CEE8142E2C4DEDA6008931E2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE8142D2C4DEDA6008931E2 /* NetworkManager.swift */; };
 		CEE814312C4DEECD008931E2 /* ApodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE814302C4DEECD008931E2 /* ApodModel.swift */; };
 		CEE814342C4E07AF008931E2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEE814332C4E07AF008931E2 /* GoogleService-Info.plist */; };
+		CEE8144A2C5F1EEF008931E2 /* PopularViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE814492C5F1EEF008931E2 /* PopularViewController.swift */; };
+		CEE8144C2C5F1F4B008931E2 /* SearchingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE8144B2C5F1F4B008931E2 /* SearchingController.swift */; };
+		CEE8144E2C5F2CEB008931E2 /* CollectionViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE8144D2C5F2CEB008931E2 /* CollectionViewHelper.swift */; };
+		CEE814502C5F2D31008931E2 /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE8144F2C5F2D31008931E2 /* CollectionCell.swift */; };
+		CEE814522C5F2D57008931E2 /* MyImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE814512C5F2D57008931E2 /* MyImageView.swift */; };
+		CEE814552C5F2DAB008931E2 /* ImageRetrieveController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE814542C5F2DAB008931E2 /* ImageRetrieveController.swift */; };
+		CEE814572C5F3352008931E2 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE814562C5F3352008931E2 /* DataLoader.swift */; };
+		CEE814592C5F33A6008931E2 /* NasaImageVideoLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE814582C5F33A6008931E2 /* NasaImageVideoLibrary.swift */; };
+		CEE8145B2C5F3408008931E2 /* ApiQueryGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE8145A2C5F3408008931E2 /* ApiQueryGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +58,15 @@
 		CEE8142D2C4DEDA6008931E2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		CEE814302C4DEECD008931E2 /* ApodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodModel.swift; sourceTree = "<group>"; };
 		CEE814332C4E07AF008931E2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CEE814492C5F1EEF008931E2 /* PopularViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularViewController.swift; sourceTree = "<group>"; };
+		CEE8144B2C5F1F4B008931E2 /* SearchingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchingController.swift; sourceTree = "<group>"; };
+		CEE8144D2C5F2CEB008931E2 /* CollectionViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewHelper.swift; sourceTree = "<group>"; };
+		CEE8144F2C5F2D31008931E2 /* CollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
+		CEE814512C5F2D57008931E2 /* MyImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyImageView.swift; sourceTree = "<group>"; };
+		CEE814542C5F2DAB008931E2 /* ImageRetrieveController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRetrieveController.swift; sourceTree = "<group>"; };
+		CEE814562C5F3352008931E2 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
+		CEE814582C5F33A6008931E2 /* NasaImageVideoLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaImageVideoLibrary.swift; sourceTree = "<group>"; };
+		CEE8145A2C5F3408008931E2 /* ApiQueryGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiQueryGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +110,9 @@
 			isa = PBXGroup;
 			children = (
 				CE6D34932C4C5EFC0014EE98 /* CustomButton.swift */,
+				CEE8144D2C5F2CEB008931E2 /* CollectionViewHelper.swift */,
+				CEE8144F2C5F2D31008931E2 /* CollectionCell.swift */,
+				CEE814512C5F2D57008931E2 /* MyImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -116,6 +137,8 @@
 		CEB92BD12C4481D500B42304 /* Nasa */ = {
 			isa = PBXGroup;
 			children = (
+				CEE814532C5F2D8E008931E2 /* Utils */,
+				CEE814482C5F1EDB008931E2 /* Popular */,
 				CEE814332C4E07AF008931E2 /* GoogleService-Info.plist */,
 				CEE8142F2C4DEEBC008931E2 /* Models */,
 				CEE814252C4DD6AC008931E2 /* APOD */,
@@ -145,8 +168,28 @@
 			isa = PBXGroup;
 			children = (
 				CEE814302C4DEECD008931E2 /* ApodModel.swift */,
+				CEE814582C5F33A6008931E2 /* NasaImageVideoLibrary.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		CEE814482C5F1EDB008931E2 /* Popular */ = {
+			isa = PBXGroup;
+			children = (
+				CEE814492C5F1EEF008931E2 /* PopularViewController.swift */,
+				CEE8144B2C5F1F4B008931E2 /* SearchingController.swift */,
+			);
+			path = Popular;
+			sourceTree = "<group>";
+		};
+		CEE814532C5F2D8E008931E2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CEE814542C5F2DAB008931E2 /* ImageRetrieveController.swift */,
+				CEE814562C5F3352008931E2 /* DataLoader.swift */,
+				CEE8145A2C5F3408008931E2 /* ApiQueryGenerator.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,15 +281,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEE8142E2C4DEDA6008931E2 /* NetworkManager.swift in Sources */,
+				CEE8145B2C5F3408008931E2 /* ApiQueryGenerator.swift in Sources */,
 				CE6D34692C4C4A8D0014EE98 /* LoginViewController.swift in Sources */,
 				CE6D34672C4C48A90014EE98 /* UsersLoader.swift in Sources */,
 				CEE814312C4DEECD008931E2 /* ApodModel.swift in Sources */,
+				CEE8144C2C5F1F4B008931E2 /* SearchingController.swift in Sources */,
+				CEE814572C5F3352008931E2 /* DataLoader.swift in Sources */,
+				CEE814552C5F2DAB008931E2 /* ImageRetrieveController.swift in Sources */,
+				CEE814522C5F2D57008931E2 /* MyImageView.swift in Sources */,
 				CE6D34652C4C485C0014EE98 /* LoginController.swift in Sources */,
 				CE6D34942C4C5EFC0014EE98 /* CustomButton.swift in Sources */,
 				CE6D34912C4C5E900014EE98 /* Constants.swift in Sources */,
 				CEB92BD32C4481D500B42304 /* AppDelegate.swift in Sources */,
+				CEE814592C5F33A6008931E2 /* NasaImageVideoLibrary.swift in Sources */,
+				CEE8144A2C5F1EEF008931E2 /* PopularViewController.swift in Sources */,
 				CEE814272C4DD6C2008931E2 /* ApodViewController.swift in Sources */,
+				CEE814502C5F2D31008931E2 /* CollectionCell.swift in Sources */,
 				CEB92BD52C4481D500B42304 /* SceneDelegate.swift in Sources */,
+				CEE8144E2C5F2CEB008931E2 /* CollectionViewHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
